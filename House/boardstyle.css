@@ -1,0 +1,217 @@
+
+:root {
+    --backgrount--color : #424242;
+
+    --white--color: white;
+    --red--color: #e53935;
+    --lightred--color:#ffffff;
+    --black--color: black;
+    --blue--dark--color:#82b3c9;
+    --lightblue--color:#eeffff;
+    --pink--color:#ff80ab;
+    --grey--color:#6d6d6d;
+    --purple--color:#fff7ff;
+    --indigo--color:#c5cae9;
+    --lime--color:#f0f4c3;
+    --darkbluegrey--color:#102027;
+    --lightgrey--color:#efefef;
+    --lightbrown--color:#efebe9;
+    
+    --font--large--size: 24px;
+    --font--medium--size: 20px;
+    --font--small--size: 16px;
+    --font--boardtitle--size: 14px;
+    --font--micro--size: 12px;
+
+    --avatar--size: 120px;
+    --padding--size: 12px;
+    --chartpadding--size: 30px;
+    --newspicture--size: 280px;
+    --menupadding--size: 8px 12px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding--size);
+    background-color: var(--darkbluegrey--color);
+}
+
+a {
+    text-decoration: none;
+    color:var(--white--color);
+}
+
+header .logoAndname {
+    display: flex;
+}
+
+header .logoAndname .logo {
+    font-size: var(--font--large--size);
+    color:var(--blue--dark--color);
+}
+
+header .logoAndname .name {
+    display: flex;
+    align-items: center;
+    font-size: var(--font--medium--size);
+    padding-left: 4px;
+}
+
+
+header .Btn {
+    display: none;
+    border: 0;
+    outline: 0;
+    background: none;
+    color:var(--blue--dark--color);
+    font-size: var(--font--medium--size);
+}
+
+.menu {
+    display: flex;
+    padding-right: 650px;
+    list-style: none;
+}
+
+.menu li {
+    padding: var(--menupadding--size);    
+}
+
+.menu li:hover {
+    background-color: var(--blue--dark--color);
+    border-radius: 4px;
+}
+
+.selectlocation {
+    padding: var(--padding--size);
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: var(--padding--size);
+}
+
+.pagination li a {
+    color: var(--black--color);
+    padding: var(--padding--size);
+}
+
+table {
+    border: 1px solid;
+    min-height: 300px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding--size);
+}
+
+.board .addBtn {
+    color: var(--black--color);
+    margin-top: 10px;
+    margin-left: 1220px;
+    
+}
+
+.board .addBtn button {
+    background-color: var(--purple--color);
+    border-radius: 4px;
+    outline: 0;
+}
+
+.all {
+    margin: 0px 100px;
+}
+
+@media screen and (max-width:768px) {
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding--size);
+}
+
+header .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .Btn {
+    position: absolute;
+    right: 25px;
+    display: block;
+}
+
+header .menu.active {
+    display: flex;
+}
+
+.selectlocation {
+    padding: var(--padding--size);
+}
+
+.board {
+    padding: var(--padding--size);
+}
+
+table {
+    border: 1px solid;
+    min-height: 300px;
+}
+
+table td {
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.board .addBtn {
+    color: var(--black--color);
+    margin-top: 10px;
+    margin-left: 640px;
+    
+}
+
+.board .addBtn button {
+    background-color: var(--purple--color);
+    outline: 0;
+    border-radius: 4px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: var(--padding--size);
+}
+
+.pagination li a {
+    color: var(--black--color);
+    padding: var(--padding--size);
+}
+
+.all {
+    margin: 0;
+}
+
+}
