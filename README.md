@@ -10,3 +10,11 @@
     ![image description](./img/이어붙이기png.png)
     
 ---    
+
+- ### [ShoppingLisk](https://github.com/CHOISEOKRYEOL/project/tree/main/Shoppinglist) 🎁
+  - **기능:** 나의 쇼핑 품목을 의류 종류, 색깔 별로 한 눈에 볼 수 있는 사이트
+  - **의도:** 여러 사이트에 장바구니에 있는 것을 한 눈에 볼 수 있으면 좋겠다고 생각하여 만들었습니다.
+  - **기간:** 1일
+  - **언어:** HTML, CSS , JavaScript
+    
+    ![image description](./img/shopping.png)
