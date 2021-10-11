@@ -18,3 +18,19 @@
   - **언어:** HTML, CSS , JavaScript
     
     ![image description](./img/shopping.png)
+
+    - ### [Game](https://github.com/CHOISEOKRYEOL/project/tree/main/Game) 🎮
+  - **기능:** 시간안에 모든 당근을 클릭하면 이기는 게임
+  - **의도:** event 연습을 하기 위해서 만들어 봤습니다.
+  - **기간:** 7일
+  - **언어:** HTML, CSS , JavaScript
+    
+    ![image description](./img/Game.png)
+
+    - ### [Youtube](https://github.com/CHOISEOKRYEOL/project/tree/main/Youtube) ▶
+  - **기능:** Youtube
+  - **의도:** 반응형 웹을 연습해보기 위해 만들어 봤습니다.
+  - **기간:** 1일
+  - **언어:** HTML, CSS , JavaScript
+    
+    ![image description](./img/Youtube.png)
