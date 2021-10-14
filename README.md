@@ -25,7 +25,7 @@
   - **기간:** 1일
   - **언어:** HTML, CSS , JavaScript
     
-    ![image description](./img/Shopping.png)
+    ![image description](./img/shopping.png)
 
 ---  
 - ### [Game](https://github.com/CHOISEOKRYEOL/project/tree/main/Game) 🎮
