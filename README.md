@@ -20,7 +20,7 @@
 
 ---  
 - ### [Shopping](https://github.com/CHOISEOKRYEOL/project/tree/main/Shopping) 🎁
-  - **기능:** Shopping
+  - **기능:** 쇼핑리스트를 입력 할 수 있다
   - **의도:** 메모장 형식으로 리스트를 입력 할 수 있는 형식으로 만들어 봤습니다
   - **기간:** 1일
   - **언어:** HTML, CSS , JavaScript
