@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a8987330c4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="boardstyle.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logoAndname">
+            <div class="logo"><i class="fab fa-unity"></i></div>
+            <div class="name"><a href="house.html">Unite</a></div>
+        </div>
+        <div class="menu">
+            <li class="menulocation"><a href="search.html">지역 찾기</a></li>
+            <li class="menunews"><a href="news.html">부동산 뉴스</a></li>
+            <li class="menuboard"><a href="board.html">게시판</a></li>
+        </div>
+        <a href="#" class="Btn"><i class="fas fa-bars"></i></a>
+    </header>
+
+ <nav class="all">
+    <nav class="selectlocation">
+    <select name="location" id="location-select">
+      <option value="seoul">서울</option>
+      <option value="gyeonggi">경기도</option>
+      <option value="else">그외 지역</option>
+  
+  </select>
+    <select name="location" id="location-select">
+        <option value="gangnam">강남</option>
+        <option value="gangbuk">강북</option>
+        <option value="seocho">서초</option>
+        <option value="songpa">송파</option>
+        <option value="dongjak">동작</option>
+    </select>
+  </nav>
+
+
+    <div class="board">
+        <table>
+            <colgroup span="4" class="columns"></colgroup>
+            <tr class="header">
+              <th>번호</th>
+              <th>제목</th>
+              <th>글쓴이</th>
+              <th>작성일</th>
+              <th>조회수</th>
+            </tr>
+            <tr class="writing">
+              <td>1</td>
+              <td>참 친절해요</td>
+              <td>부동산짱</td>
+              <td>21.09.01</td>
+              <td>1251</td>
+            </tr>
+            <tr class="writing">
+              <td>2</td>
+              <td>자세히 알려줘요</td>
+              <td>크크크</td>
+              <td>21.08.29</td>
+              <td>144</td>
+            </tr>
+            <tr class="writing">
+                <td>3</td>
+                <td>불친절하세요</td>
+                <td>야망가</td>
+                <td>21.08.27</td>
+                <td>1124</td>
+              </tr>
+              <tr class="writing">
+                <td>4</td>
+                <td>법률에 대해 많이 아시는거 같아요</td>
+                <td>1년만</td>
+                <td>21.08.26</td>
+                <td>102</td>
+              </tr>
+              <tr class="writing">
+                <td>5</td>
+                <td>회사가 커요</td>
+                <td>2년만</td>
+                <td>21.08.13</td>
+                <td>245</td>
+              </tr>
+              <tr class="writing">
+                <td>6</td>
+                <td>손님이 많아요</td>
+                <td>3년만</td>
+                <td>21.08.08</td>
+                <td>561</td>
+              </tr>
+              <tr class="writing">
+                <td>7</td>
+                <td>수수료가 비싼거 같아요</td>
+                <td>4년만</td>
+                <td>21.08.04</td>
+                <td>561</td>
+              </tr>
+              <tr class="writing">
+                <td>8</td>
+                <td>외진곳에 있어요</td>
+                <td>5년만</td>
+                <td>21.07.27</td>
+                <td>614</td>
+              </tr>
+              <tr class="writing">
+                <td>9</td>
+                <td>수수료가 싼거 같아요</td>
+                <td>6년만</td>
+                <td>21.07.24</td>
+                <td>87</td>
+              </tr>
+              <tr class="writing">
+                <td>10</td>
+                <td>회사가 지저분해요</td>
+                <td>7년만</td>
+                <td>21.07.22</td>
+                <td>517</td>
+              </tr>
+            
+          </table>
+          <a href="writingboard.html" class="addBtn"><button>게시글 작성</button></a>
+    </div>
+
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    </div>
+  </nav>
+</body>
+</html>

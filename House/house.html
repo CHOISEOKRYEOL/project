@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a8987330c4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="logoAndname">
+            <div class="logo"><i class="fab fa-unity"></i></div>
+            <div class="name"><a href="house.html">Unite</a></div>
+        </div>
+        <div class="menu">
+            <li class="menulocation"><a href="search.html">지역 찾기</a></li>
+            <li class="menunews"><a href="news.html">부동산 뉴스</a></li>
+            <li class="menuboard"><a href="board.html">게시판</a></li>
+        </div>
+        <a href="#" class="Btn"><i class="fas fa-bars"></i></a>
+    </header>
+    
+    <nav class="all">
+    <section class="searchlocation">
+        <div class="search"><textarea cols="40" rows="1" ></textarea></div>
+        <a href="#" class="icon"><i class="fas fa-search"></i></a>
+        <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b967520eb7cd0acdbd58926238a1040d"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+    </section>
+    <section class="news">
+        <section class="popularnews">
+            <ol>
+                <span class="title">인기있는 기사</span>
+                <li><a href="#"><span>사전청약 확대나선 정부…분양가심사 가이드라인 개편 착수</span></a></li>
+                <li><a href="#"><span>윤석열 1호 공약은 부동산 “청년·신혼에 원가·반값 주택 50만호”</span></a></li>
+                <li><a href="#"><span>8월 집값 비수기 뚫고 ‘하이킥’… 하반기 전망 암울</span></a></li>
+                <li><a href="#"><span>월세 80만원인데 전세대출 이자 23만원…전세로 기운 ‘월남전선’</span></a></li>
+                <li><a href="#"><span>노형욱 국토 "공급 유지하고 금리·대출 관리하면 부동산 정상화될 것"</span></a></li>
+                <li><a href="#"><span>구리시, 교문지구에 첫 '이재명표' 기본주택 추진</span></a></li>
+                <li><a href="#"><span>두 자녀 낳으면 임대료 '0원'···충남행복주택, 결혼·저출생 해결 '일석이조'</span></a></li>
+                <li><a href="#"><span>8월 주택 매매·전세 모두 ↑…서울 아파트 1.59% [부동산360]</span></a></li>
+                <li><a href="#"><span>부동산 거래자 46% “공인중개사 전문성 낮다”</span></a></li>
+                <li><a href="#"><span>안상수 "대선주자 부동산거래 내역 공개하자"</span></a></li>
+            </ol>
+        </section>
+      <section class="newsstory">
+       <section class="top">
+        <div class="toppictureAndtitle"><img src="./img/다운로드.jpg">
+            <div class="topwriting">
+                <section class="title">"임대차법 이후 전셋값 급등…전세계약금 지원 한도 늘려야"</section>
+                <section class="content">임대차2법 시행으로 발생한 전셋값 급등 현상을 해결하기 위해 전세계약금 지원 한도를 올려야 한다는 국회 지적이 나왔다.</section>
+            </div>
+        </div>
+            <div class="toppictureAndtitle"><img src="./img/부동산1.jpg">
+              <div class="topwriting">
+                <section class="title">국토부, `스마트건설 챌린지 2021` 개최</section>
+                <section class="content">국토교통부는 한국건설기술연구원과 한국토지주택공사(LH), 한국도로공사 등 5개 기관이 주관하는 '스마트건설 챌린지 2021'이 9월 1일부터 개최된다고 31일 밝혔다.</section>
+              </div>
+            </div>
+        </section> 
+       <section class="bottom">
+        <div class="bottompictureAndtitle"><img src="./img/부동산2.jpg">
+            <div class="bottomwriting">
+                <section class="title">서울시, 민관 협력으로 남산 녹지 복원한다</section>
+                <section class="content">산림 복원 사업지 위치도 /사진=서울시서울시는 신한금융지주회사, 사단법인 평화의숲과 함께 연말까지 남산 산림 복원 작업에 착수한다고 30일 밝혔다.</section>
+            </div>
+        </div>
+        <div class="bottompictureAndtitle"><img src="./img/부동산3.jpg">
+            <div class="bottomwriting">
+                <section class="title">신혼부부 취향 맞춤, 신혼희망타운 ‘강서 금호어울림 퍼스티어’ 주목</section>
+                <section class="content">강서 금호어울림 퍼스티어’ 조감도 단지 내 어린이집, 공동육아실, 키즈 도서관 등 아이 키우기 좋은 환경 갖춰
+                </section>
+            </div>
+        </div>
+       </section> 
+     </section>
+    </section>
+    <section class="board">
+        <div class="seoul">
+            <span class="seoulboard">서울</span>
+            <li><span class="title">전문지식이 많은신 분인거 같아요</span><span class="id">갑부</span></li>
+            <li><span class="title">중개업자분이 참 친절하세요</span><span class="id">부동산천제</span></li>
+            <li><span class="title">여기 덤탱이 씌우는거 같아요</span><span class="id">불로소득</span></li>
+            <li><span class="title">수수료가 너무 비싼거 같아요</span><span class="id">울아빠재벌</span></li>
+            <li><span class="title">그냥 평범했습니다</span><span class="id">돈남아돌아</span></li>
+            <a href="#" class="seoulBtn"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        <div class="gyeonggi">
+            <span class="gyeonggiboard">경기도</span>
+            <li><span class="title">지역이 괜찮은거 같아요</span><span class="id">돈굴리기</span></li>
+            <li><span class="title">손님이 많아요</span><span class="id">dksjwi5</span></li>
+            <li><span class="title">다시 한 번 가보려고요</span><span class="id">glrjhi2</span></li>
+            <li><span class="title">괜찮은거 같아요</span><span class="id">돈이좋아</span></li>
+            <li><span class="title">좋은 말만 하네요ㅎㅎ</span><span class="id">재밌다</span></li>
+            <a href="#" class="gyeonggiBtn"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        <div class="else">
+            <span class="elseboard">그 외 지역</span>
+            <li><span class="title">잘 설명해주세요</span><span class="id">넘나</span></li>
+            <li><span class="title">전문지식이 많은신 분인거 같아요</span><span class="id">좋아</span></li>
+            <li><span class="title">지역이 너무 외져요</span><span class="id">I</span></li>
+            <li><span class="title">찾아가기 너무 힘들어요</span><span class="id">Love</span></li>
+            <li><span class="title">회사가 엄청 커요</span><span class="id">You</span></li>
+            <a href="#" class="elseBtn"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+    </section>
+</nav>
+</body>
+</html>
