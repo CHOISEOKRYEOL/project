@@ -7,7 +7,7 @@
   - **기간:** 7일
   - **언어:** HTML, CSS , JavaScript
     
-    ![image description](./img/이어붙이기png.png)
+    ![image description](./img/House.png)
     
 ---    
 - ### [Shoppinglist](https://github.com/CHOISEOKRYEOL/project/tree/main/Shoppinglist) 🎁
