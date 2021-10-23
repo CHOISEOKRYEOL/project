@@ -1,6 +1,7 @@
 const Btn = document.querySelector('.Btn');
 const menu = document.querySelector('.menu');
 
+// 토글 클릭시 active가 활성화되어 실행
 Btn.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
