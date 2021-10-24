@@ -1,6 +1,32 @@
 # Game
 
 ```JavaScript
+
+const CARROT_SIZE = 80;
+const CARROT_COUNT = 15;
+const BUG_COUNT = 15;
+const GAME_DURATION_SEC = 15;
+
+const field = document.querySelector('.game_field');
+const fieldRect = field.getBoundingClientRect();
+const gameBtn = document.querySelector('.game_button');
+const gameTimer = document.querySelector('.game_timer');
+const gameScore = document.querySelector('.game_score');
+
+const popUp = document.querySelector('.pop-up');
+const popUpText = document.querySelector('.pop-up_message');
+const popUpRefresh = document.querySelector('.pop-up_refresh');
+
+const carrotSound = new Audio('/sound/carrot_pull.mp3');
+const alertSound = new Audio('/sound/alert.wav');
+const bgSound = new Audio('/sound/bg.mp3');
+const bugSound = new Audio('/sound/bug_pull.mp3');
+const winSound = new Audio('/sound/game_win.mp3');
+
+let started = false;
+let score = 0;
+let timer = undefined;
+
 // 게임 시작시 버튼을 누를시 나오는 상황
 field.addEventListener('click',onFieldClick);
 gameBtn.addEventListener('click', () => {
@@ -10,6 +36,31 @@ gameBtn.addEventListener('click', () => {
     startGame();
   }
 });
+
+// 당근 클릭시 당근을 제거한 후 스코어 조정 후 성공 실패 여부 결정
+function onFieldClick(event) {
+  if(!started) {
+    return;
+  }
+  const target = event.target;
+  if(target.matches('.carrot')) {
+    // 당근!
+    target.remove();
+    score++;
+    playSound(carrotSound);
+    updateScoreBoard();
+    if(score === CARROT_COUNT) {
+      finishGame(true);
+    }
+  } else if(target.matches('.bug')) {
+    // 벌레!
+    finishGame(false);
+  }
+}
+
+function updateScoreBoard() {
+  gameScore.innerText = CARROT_COUNT - score;
+}
 
 ```
 
@@ -121,7 +172,7 @@ function finishGame(win) {
   showPopUpWithText(win? ' YOU WON' : 'YOU LOST');
 }
 
-// 사운드를 실행
+// 배경음악을 실행
 function playSound(sound) {
   sound.currentTime = 0;
   sound.play();
@@ -130,4 +181,47 @@ function playSound(sound) {
 ```
 
 ![image description](./img/startgame.png)
+***
+
+```JavaScript
+// 게임이 종료시 실행되는 것들
+function stopGame() {
+  started = false;
+  stopGameTimer();
+  hideGameButton();
+  showPopUpWithText('REPLAY?');
+  playSound(alertSound);
+  stopSound(bgSound);
+}
+
+// 시간을 멈춘다
+function stopGameTimer() {
+  clearInterval(timer);
+}
+
+// 게임버튼을 감춘다
+function hideGameButton() {
+  gameBtn.style.visibility = 'hidden';
+}
+
+// popup창을 띄운다
+function showPopUpWithText(text) {
+  popUpText.innerText = text;
+  popUp.classList.remove('pop-up--hide');
+}
+
+// 종료시 울리는 소리를 실행
+function playSound(sound) {
+  sound.currentTime = 0;
+  sound.play();
+}
+
+// 배경음악을 종료
+function stopSound(sound) {
+  sound.pause();
+}
+
+```
+
+![image description](./img/finishgame.png)
 ***
