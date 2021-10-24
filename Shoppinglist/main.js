@@ -43,8 +43,6 @@ function setEventListeners(items) {
 }
 
 
-
-
 loadItems()
 .then(items => {
      displayItems(items);
