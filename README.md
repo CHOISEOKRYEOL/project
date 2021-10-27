@@ -6,7 +6,7 @@
   - **기간:** 7일
   - **언어:** HTML, CSS , JavaScript
     
-    ![image description](./img/Portfolio.png)
+    ![image description](./img/Portfolio.png) 
 
 ***
 - ### [House](https://github.com/CHOISEOKRYEOL/project/tree/main/House) 🏠
