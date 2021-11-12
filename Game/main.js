@@ -158,7 +158,7 @@ function stopSound(sound) {
 
 function updateScoreBoard() {
   gameScore.innerText = CARROT_COUNT - score;
-}
+} 
 
 function addItem(className, count, imgPath) {
   const x1 = 0;
