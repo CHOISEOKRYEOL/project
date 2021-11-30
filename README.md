@@ -47,9 +47,19 @@
 ***  
 - ### [Youtube](https://github.com/CHOISEOKRYEOL/project/tree/main/Youtube) ▶
   - **기능:** Youtube
-  - **의도:** 메모장에 나의 일정을 기록 할 수 있듯이 영상을 저장하거나 기록해 두면 좋겠다고 생각하야 만들어보았습니다.
+  - **의도:** 메모장에 나의 일정을 기록 할 수 있듯이 영상을 저장하거나 기록해 두면 좋겠다고 생각하야 만들어봤습니다.
   - **기간:** 1일
   - **언어:** HTML, CSS , JavaScript
     
     ![image description](./img/Youtube.png)
+
+***  
+- ### [Page](https://github.com/CHOISEOKRYEOL/End) ▶
+  - **기능:** Shopping Site Page 
+  - **의도:** Page는 사용자를 끌어들이는 가장 중요한 요소라고 생각합니다.
+  그래서 해외에서 주로 만들어지는 형식을 만들어봤습니다.
+  - **기간:** 3일
+  - **언어:** HTML, CSS
+    
+    ![image description](./img/Page.png)
 
